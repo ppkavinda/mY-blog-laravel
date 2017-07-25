@@ -15,6 +15,17 @@
             @endforeach
             </ol>
           </div>
+
+          <div class="sidebar-module">
+            <h4>Tags</h4>
+
+            <ol class="list-unstyled">
+              @foreach($tags as $tag)
+                <a class="btn btn-secondary btn-sm" href="/posts/tags/{{ $tag }}">{{ $tag }}</a>
+              @endforeach
+            </ol>
+          </div>
+
           <div class="sidebar-module">
             <h4>Elsewhere</h4>
             <ol class="list-unstyled">
